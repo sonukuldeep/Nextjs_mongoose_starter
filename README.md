@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Nextjs mongoose template
 
-First, run the development server:
+This is a starter repo for all projects that need Nextjs and mongo database using mongoose.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+[This](https://blog.usmans.me/how-to-use-mongoose-with-nextjs-for-mongodb) article was followed in part to make mongoose work with latest version on nextjs.
+
+It is also possible to connect Nextjs and mongodb using versel by following [this](https://www.youtube.com/watch?v=JIlYroSsInU) video.
+
+All credit goes to these articles and video for this repo to exist. 
+
+
+## Acknowledgements
+
+ - Mongodb 
+ - Vercel
+ - Opensource community
+ - My brain
+
+
+## Installation
+
+The project requires node js and git.
+
+Clone the website using
+```npm
+git clone 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install this project with npm
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd project-directory
+  npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Run using
 
-## Learn More
+```bash
+  npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## In the browser open
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  http://localhost:3000/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Important files
+```css
+utils
+├── mongoose.ts
+└── mongodb.ts
 
-## Deploy on Vercel
+models
+└── testModels.ts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Badges
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## Author
+- [@sonukuldeep](https://www.github.com/sonukuldeep)
+
+
+## 🛠 Skills
+
+[![My Skills](https://skillicons.dev/icons?i=js,ts,html,css,tailwind,sass,nodejs,react,vue,flask,rust,python,php,solidity,mongodb,mysql,prisma,figma,threejs)](https://github.com/sonukuldeep)
