@@ -1,6 +1,8 @@
 
 # Nextjs mongoose template
 
+![main image](https://cdn.devdojo.com/posts/images/April2022/how-to-use-mongoose-with-nextjs-for-mongodb2.jpg?auto=format&q=70&w=600)
+
 This is a starter repo for all projects that need Nextjs and mongo database using mongoose.
 
 [This](https://blog.usmans.me/how-to-use-mongoose-with-nextjs-for-mongodb) article was followed in part to make mongoose work with latest version on nextjs.
@@ -55,6 +57,8 @@ utils
 models
 └── testModels.ts
 ```
+
+Note:- Enable serverActions as done in next.config.js file if you're not cloning this repo since these setting are still in experimental as of nextjs 13.4.5
 
 ## Badges
 

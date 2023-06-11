@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={`${inter.className} max-w-7xl mx-auto text-slate-500`}>
         <header className='flex gap-2'>
           <Link className='border border-slate-400 py-1 px-3 rounded my-2 text-slate-500 hover:shadow-lg transition-all active:bg-slate-500 active:text-slate-100' href={'/'}>Home</Link>
-          <Link className='border border-slate-400 py-1 px-3 rounded my-2 text-slate-500 hover:shadow-lg transition-all active:bg-slate-500 active:text-slate-100' href={'/app'}>App</Link>
+          <Link className='border border-slate-400 py-1 px-3 rounded my-2 text-slate-500 hover:shadow-lg transition-all active:bg-slate-500 active:text-slate-100' href={'/create'}>App</Link>
         </header>
         {children}</body>
     </html>
