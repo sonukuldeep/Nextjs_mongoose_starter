@@ -1,14 +1,15 @@
 import connectMongo from '@/utils/mongoose'
 import Test from '@/models/testModel'
+import Link from 'next/link';
 
 async function fetchDocuments() {
   console.log('CONNECTING TO MONGO');
   await connectMongo();
   console.log('CONNECTED TO MONGO');
 
-  const test = await Test.find()
   console.log('FETCHING DOCUMENT');
-  console.log(test)
+  const test = await Test.find()
+  console.log('DATA FETCHED')
   return test
 }
 
@@ -16,11 +17,13 @@ const Home = async () => {
   const data = await fetchDocuments()
   return (
     <>
-      <main>
-        Hello home
-        <ul>
+      <main className='flex flex-col gap-2'>
+        <h1 className='text-xl'>How does this work?</h1>
+        <p>Mongodb data is fetched from the root page component and the data is rendered here as below.</p>
+        <p>Any form of data can be fetched in server side in advanced and served provided all models are defined in /models folder</p>
+        <ul className='grid grid-cols-3 gap-2'>
           {data.map(data => (
-            <li key={data.id}>name:- {data.name} email:- {data.email}</li>
+            <li className='border p-2 rounded' key={data.id}>name:- {data.name} <br/> email:- {data.email}</li>
           ))}
         </ul>
       </main>

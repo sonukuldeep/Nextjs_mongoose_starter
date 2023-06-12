@@ -19,6 +19,9 @@ async function connectMongodb(formdata: FormData) {
 const Home = () => {
   return (
     <>
+      <p>This is where the magic happens</p>
+      <p>This component uses nextjs experimental funtionality</p>
+      <p>Under the hood this form component invokes a server side function which check and uploads the data to mongodb backend</p>
       <form action={connectMongodb} className='flex flex-col gap-1'>
         <div className="flex flex-col gap-1">
           <label htmlFor="name">Name:-</label>
@@ -28,7 +31,7 @@ const Home = () => {
           <label htmlFor="email">Email:-</label>
           <input className='outline-none border border-slate-300 max-w-[250px] rounded p-1' type="email" name='email' />
         </div>
-        <button className='border border-slate-300 rounded px-2 py-1 max-w-[250px]'>Submit</button>
+        <button className='bg-green-400 hover:bg-green-500 text-white font-bold py-1 px-3 my-2 border border-green-500 rounded self-start'>Submit</button>
       </form>
     </>
   )
