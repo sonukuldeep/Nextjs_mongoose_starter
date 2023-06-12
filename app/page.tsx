@@ -1,6 +1,5 @@
 import connectMongo from '@/utils/mongoose'
 import Test from '@/models/testModel'
-import Link from 'next/link';
 
 async function fetchDocuments() {
   console.log('CONNECTING TO MONGO');
