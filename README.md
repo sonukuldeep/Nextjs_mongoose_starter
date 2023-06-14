@@ -11,6 +11,11 @@ It is also possible to connect Nextjs and mongodb using versel by following [thi
 
 All credit goes to these articles and video for this repo to exist. 
 
+## Mongoose
+Enter mongodb atlas uri into .env file so that the program can connect to your database
+
+## Next-auth
+Follow the official docs to setup oauth on google, facebook or whatever provider you want. Enter credentials in .env file and you should be good
 
 ## Acknowledgements
 
