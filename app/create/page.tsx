@@ -4,10 +4,6 @@ import { redirect } from 'next/navigation';
 
 async function connectMongodb(formdata: FormData) {
   'use server'
-  console.log('CONNECTING TO MONGO');
-  await connectMongo();
-  console.log('CONNECTED TO MONGO');
-
   console.log('CREATING DOCUMENT');
   const data = { name: formdata.get('name'), email: formdata.get('email') }
   const test = await Test.create(data);
