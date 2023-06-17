@@ -10,11 +10,21 @@ export const metadata = {
   description: 'app',
 }
 
+async function connectMongodb() {
+  'use server'
+  try {
+    await connectMongo();
+  } catch (error: any) {
+    console.error(error.message)
+  }
+}
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  connectMongodb()
   return (
     <Provider>
       <html lang="en">
