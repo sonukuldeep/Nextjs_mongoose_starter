@@ -2,10 +2,6 @@ import connectMongo from '@/utils/mongoose'
 import Test from '@/models/testModel'
 
 async function fetchDocuments() {
-  console.log('CONNECTING TO MONGO');
-  await connectMongo();
-  console.log('CONNECTED TO MONGO');
-
   console.log('FETCHING DOCUMENT');
   const test = await Test.find()
   console.log('DATA FETCHED')
