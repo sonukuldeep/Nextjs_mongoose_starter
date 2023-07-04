@@ -1,5 +1,6 @@
 
 # Nextjs mongoose template
+## With next-auth
 
 ![main image](https://cdn.devdojo.com/posts/images/April2022/how-to-use-mongoose-with-nextjs-for-mongodb2.jpg?auto=format&q=70&w=600)
 
@@ -15,11 +16,14 @@ All credit goes to these articles and video for this repo to exist.
 Enter mongodb atlas uri into .env file so that the program can connect to your database
 
 ## Next-auth
-Follow the official docs to setup oauth on google, facebook or whatever provider you want. Enter credentials in .env file and you should be good
+Follow the official docs to setup oauth on google, facebook or whatever provider you want. Enter credentials in .env file.
+I have demonstarted 4 ways in which next-auth can be used
+- 3 server methods
+- 1 client method. check /client to see the emplementation
 
 ## Acknowledgements
-
  - Mongodb 
+ - [Dave](https://github.com/gitdagray/next-auth-intro)
  - Vercel
  - Opensource community
  - My brain
