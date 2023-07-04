@@ -17,7 +17,7 @@ Enter mongodb atlas uri into .env file so that the program can connect to your d
 
 ## Next-auth
 Follow the official docs to setup oauth on google, facebook or whatever provider you want. Enter credentials in .env file.
-Check old-way repo to see how i use next-auth earlier
+Check old-way repo to see how i used next-auth earlier.
 I have demonstarted 4 ways in which next-auth can be used
 - 3 server methods
 - 1 client method. check /client to see the emplementation
